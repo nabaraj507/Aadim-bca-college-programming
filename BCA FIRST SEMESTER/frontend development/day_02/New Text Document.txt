@@ -1,0 +1,15 @@
+Tag:
+ 6 heading: h1 h2 h3 h4 h5 h6
+<br> = Break
+<h..>=Heading 
+<b> ..</b>=Bold
+<i>..</i>=Italic
+<u>..</u>=Underline
+<p>..</p>=Paragraph
+<li>..</li> =list
+<ul>..</ul>= Unordered List
+<ol>..</ol>=Ordered List
+<table> ..</table>=Table
+
+
+

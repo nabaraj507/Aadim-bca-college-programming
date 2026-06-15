@@ -1,0 +1,9 @@
+Create a website in react with backend and frontend for the Party Management Name of the "Royal Durbar Party and Event Management"
+
+Features of the website is:
+1. Good css
+2. with details adding photos client rating
+3. full contact and the features of add location
+4. features of admin in backend 
+5. Include map and details of our company
+6. Company order in admin

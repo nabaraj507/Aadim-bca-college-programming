@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MylogIn form</title>
+<style>
+    .hello{
+        border: 2px solid #333;
+        padding: 70px;
+        margin: 10px;
+        width: 310px;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+    .hello:hover{
+        background-color: skyblue;
+    }
+</style>
+
+
+
+
+</head>
+<body>
+<!--<form>
+    <div class="form">
+        <label for ="username">username=</label>
+        <input type="text" id ="username" placeholder="enter your name"> <br>
+        <label for="email">email=</label>
+        <input type="text" id="email" placeholder="enter your email"> <br>
+        <label for "age">age=</label> 
+        <input type="age" id="number" placeholder="enter your age"> <br>
+    
+       <label for="button">button</label> 
+    
+    </div>
+</form>-->
+<div class="hello">
+<form action="/submit-page.php" method="post">
+<label for="Username">Username:</label>
+<input type="text" id="Username" name="Username" placeholder="enter Username"><br/><br/>
+<label for="password">password:</label>
+<input type="password" id="password" name="Password" placeholder=" enter Password"><br/><br/><br/>
+<pre>                <button type="submit">log in</button></pre>
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Royal Durbar Party & Event Management</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#f8f8f8;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      height:100vh;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:22px;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:gold;
+      color:black;
+      padding:14px 30px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+      transform:scale(1.05);
+    }
+
+    nav{
+      position:fixed;
+      width:100%;
+      top:0;
+      left:0;
+      background:rgba(0,0,0,0.8);
+      padding:15px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+    }
+
+    nav h2{
+      color:gold;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+    }
+
+    nav ul li{
+      margin-left:20px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:gold;
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h2{
+      font-size:40px;
+      color:#222;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .service-box{
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      text-align:center;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .service-box:hover{
+      transform:translateY(-10px);
+    }
+
+    .service-box img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:10px;
+      margin-bottom:15px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+    }
+
+    .gallery img{
+      width:100%;
+      border-radius:15px;
+      height:250px;
+      object-fit:cover;
+      transition:0.3s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.05);
+    }
+
+    .reviews{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+    }
+
+    .review-box{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .stars{
+      color:gold;
+      font-size:20px;
+      margin-bottom:10px;
+    }
+
+    .contact{
+      background:#111;
+      color:white;
+      border-radius:20px;
+      padding:50px;
+    }
+
+    .contact-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:40px;
+    }
+
+    .contact-info h3{
+      margin-bottom:15px;
+      color:gold;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+      width:100%;
+      padding:14px;
+      margin-bottom:15px;
+      border:none;
+      border-radius:10px;
+    }
+
+    .contact-form button{
+      background:gold;
+      border:none;
+      padding:14px 25px;
+      border-radius:30px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    iframe{
+      width:100%;
+      height:300px;
+      border:none;
+      border-radius:15px;
+      margin-top:20px;
+    }
+
+    footer{
+      background:black;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      .hero h1{
+        font-size:38px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      nav{
+        flex-direction:column;
+      }
+
+      nav ul{
+        margin-top:10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>Royal Durbar</h2>
+
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="hero">
+      <h1>Royal Durbar Party & Event Management</h1>
+      <p>Creating unforgettable celebrations with elegance and style.</p>
+
+      <a href="#contact" class="btn">Book Your Event</a>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+    </div>
+
+    <div class="services">
+
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1000&auto=format&fit=crop">
+        <h3>Wedding Events</h3>
+        <p>Luxury wedding planning with full decoration, catering, and entertainment.</p>
+      </div>
+
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop">
+        <h3>Birthday Parties</h3>
+        <p>Beautiful birthday celebrations for kids, teens, and adults.</p>
+      </div>
+
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=1000&auto=format&fit=crop">
+        <h3>Corporate Events</h3>
+        <p>Professional event management for conferences and company gatherings.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="section-title">
+      <h2>Event Gallery</h2>
+    </div>
+
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1000&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=1000&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=1000&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1000&auto=format&fit=crop">
+    </div>
+  </section>
+
+  <!-- Client Reviews -->
+  <section id="reviews">
+    <div class="section-title">
+      <h2>Client Reviews</h2>
+    </div>
+
+    <div class="reviews">
+
+      <div class="review-box">
+        <div class="stars">★★★★★</div>
+        <p>
+          "Royal Durbar made our wedding absolutely magical.
+          The decoration and service were outstanding!"
+        </p>
+        <h4>- Suman & Priya</h4>
+      </div>
+
+      <div class="review-box">
+        <div class="stars">★★★★★</div>
+        <p>
+          "Best event management company in Nepal.
+          Everything was perfectly organized."
+        </p>
+        <h4>- Ramesh Thapa</h4>
+      </div>
+
+      <div class="review-box">
+        <div class="stars">★★★★☆</div>
+        <p>
+          "Very professional team with beautiful event setup
+          and friendly staff."
+        </p>
+        <h4>- Anisha Gurung</h4>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact">
+
+      <div class="section-title">
+        <h2 style="color:white;">Contact Us</h2>
+      </div>
+
+      <div class="contact-container">
+
+        <div class="contact-info">
+          <h3>Office Address</h3>
+          <p>
+            Royal Durbar Party & Event Management<br>
+            Kathmandu, Nepal
+          </p>
+
+          <h3>Phone</h3>
+          <p>+977-9800000000</p>
+
+          <h3>Email</h3>
+          <p>royaldurbar@gmail.com</p>
+
+          <!-- Google Map -->
+          <iframe 
+            src="https://maps.google.com/maps?q=Kathmandu&t=&z=13&ie=UTF8&iwloc=&output=embed">
+          </iframe>
+        </div>
+
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea rows="6" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2026 Royal Durbar Party & Event Management | All Rights Reserved
+    </p>
+  </footer>
+
+</body>
+</html>

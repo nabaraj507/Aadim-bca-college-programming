@@ -1,0 +1,8 @@
+.card{
+    width: 260px;
+    height: 200px;
+    background: #cbd5e1;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: perspective()
+}

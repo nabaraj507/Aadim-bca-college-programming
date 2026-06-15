@@ -1,0 +1,58 @@
+1. Explain with code and example about 1D and 2D array.
+
+Array
+An array is a collection of elements of the same data type stored in contigous memory.
+
+Array :
+   1. 1D array
+   A 1D array is a simple list of elements stored in contiguous memory. You access elements using a single index.
+    syntax of 1D: (array datatype arrayName[size];)
+
+    Example of 1D array
+     #include<stdio.h>
+     int main()
+     {
+        int num[5]={10,20,30,40,50};
+        
+        printf("All elements in the array:\n");
+          for (int i = 0; i < 5; i++) 
+          {
+            printf("%d ", numbers[i]);
+          }
+        printf("\n");
+        return 0;
+     }
+
+
+   2. 2D array 
+     A 2D array is like as a table or matrix. We use like rows and column
+     syntax of 2D: (array datatype arrayName[][]))
+
+     Example of 2D array:
+
+    
+    #include<stdio.h>
+    int main(){
+    int arr[3][3];
+    for (int i = 0; i <=2; i++)
+    {
+        for (int j = 0; j <=2; j++)
+        {
+            printf("Enter the value of arr[%d][%d]",i,j);
+            scanf("%d",&arr[i][j]);
+
+        }
+        
+    }
+    printf("Enter matrix are: \n");
+    for(int i=0;i<=2;i++)
+    {
+        for(int j=0;j<=2;j++)
+        {
+            printf("%d \t",arr[i][j]);
+        }
+        printf("\n");
+    }
+    
+}
+      
