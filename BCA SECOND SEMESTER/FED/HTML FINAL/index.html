@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Result</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>S.N.</th>
+                    <th>Name</th>
+                    <th>PR Marks</th>
+                    <th>TH Marks</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+
+            <tbody id="resultTable">
+            </tbody>
+        </table>
+
+        <div class="form-box">
+            <h2>Enter Student Details</h2>
+
+            <input type="text" id="name" placeholder="Student Name">
+
+            <input type="number" id="pr" placeholder="PR Marks" min="0" max="60">
+
+            <input type="number" id="th" placeholder="TH Marks" min="0" max="40">
+
+            <input type="text" id="grade" placeholder="Grade">
+
+            <button onclick="addStudent()">Submit</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

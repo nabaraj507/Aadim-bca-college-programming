@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    padding: 30px;
+}
+
+/* ---------- Table Section ---------- */
+
+.table{
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.table h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.table p{
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th{
+    background: #007bff;
+    color: white;
+    padding: 12px;
+}
+
+td{
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #f4f4f4;
+}
+
+table, th, td{
+    border: 1px solid #ddd;
+}
+
+tr:hover{
+    background-color: #e8f0ff;
+}
+
+/* ---------- Form Section ---------- */
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.details{
+    width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.details h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+input:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.3);
+}
+
+button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+button[type="button"]{
+    background: #007bff;
+    color: white;
+}
+
+button[type="button"]:hover{
+    background: #0056b3;
+}
+
+button[type="reset"]{
+    background: #dc3545;
+    color: white;
+    margin-left: 10px;
+}
+
+button[type="reset"]:hover{
+    background: #b52a37;
+}
