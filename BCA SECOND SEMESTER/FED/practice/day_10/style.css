@@ -1,0 +1,25 @@
+/* .colored{
+    background-color: blanchedalmond;
+    height: 400px;
+    width: 400px;
+    background-image: url(../day_3/images/img.png);
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-attachment: ;
+} */
+
+/* body{
+    background-image: url(../day_3/images/img.png);
+    background-attachment: fixed;
+    color: red;
+    background-repeat: no-repeat;
+    background-position: top;
+
+
+     shortcut for background
+     background-image: #color, url(), repeat, position;
+
+} */
+
