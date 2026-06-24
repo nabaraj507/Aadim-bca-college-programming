@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "BankAccountDemo",
+            "request": "launch",
+            "mainClass": "main.BankAccountDemo",
+            "projectName": "aadim college programming_9973cafa"
+        }
+    ]
+}
